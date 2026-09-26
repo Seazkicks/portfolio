@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-body">
     <header>
-        <div class="container">
+        
             <div class="header">
                 <nav class="navbar">
                     <ul class="navbar-list">
@@ -26,49 +26,53 @@
                     </div>
                 </nav>
             </div>
-        </div>
+        
     </header>
 
     <main>
         <div class="page-content">
-            <div class="container">
-                <section class="main">
+            <div class="">
+                <section class="main container">
                     <h1 class="fio" id="main">ДМИТРИЙ РАЗУМКОВ</h1>
-                    <p class="main-text">
+                    <p class="main-desc main-text">
                         Начинающий Frontend-разработчик. 
                         Изучаю создание адаптивных сайтов и интерактивных интерфейсов. 
                         Ищу возможности для применения полученных знаний на практике.
                     </p>
-                    <img src="./images/main.png" alt="Главное изображение">
+                    <img class="main-img" src="./assests/images/main.png" alt="Главное изображение">
                 </section>
 
-                <section class="about">
-                    <h2 id="about" class="about-title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h2>
-                    <p class="about-text">
-                        Меня зовут Дмитрий. Я активно учусь на Frontend-разработчика и горю желанием создавать удобные и красивые сайты. 
-                        В процессе обучения я освоил верстку, работу с современными фреймворками и инструментами разработки.
-                    </p>
-                    <p class="about-text">
-                        Мне нравится превращать дизайн-макеты в живой код, который работает на любых устройствах. 
-                        Я внимателен к деталям, быстро учусь новому и готов вникать в задачи любой сложности. 
-                        Моя цель — стать частью команды профессионалов и расти как специалист.
-                    </p>
+                <section id="about" class="about container">
+                    <div class="about-container container">
+                        <h2 class="about-title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h2>
+                        <p class="about-text">
+                            Меня зовут Дмитрий. Я активно учусь на Frontend-разработчика и горю желанием создавать удобные и красивые сайты. 
+                            В процессе обучения я освоил верстку, работу с современными фреймворками и инструментами разработки.
+                        </p>
+                        <p class="about-text">
+                            Мне нравится превращать дизайн-макеты в живой код, который работает на любых устройствах. 
+                            Я внимателен к деталям, быстро учусь новому и готов вникать в задачи любой сложности. 
+                            Моя цель — стать частью команды профессионалов и расти как специалист.
+                        </p>
+                    </div>
                     <figure class="about-photo">
-                        <img src="./images/me.jpg" alt="Да, да. Это я" width="300" height="400">
+                        <img src="./assests/images/me.jpg" alt="Да, да. Это я" width="600" height="800">
                     </figure>
                 </section>
 
-                <section class="skills">
-                    <h2 id="skills">Навыки и стэк технологий</h2>
+                <section class="skills container">
+                    <h2 id="skills" class="skills-title">Навыки и стэк технологий</h2>
                     <div class="skills-table">
-                        <div class="skills-card">
+                        <div class="skill-card">
                             <section class="skill-card-section">
-                                <img src="./icons/Development.svg" alt="Разработка">
+                                <img src="./assests/icons/Development.svg" alt="Разработка">
                                 <h3 class="card-title">Разработка сайтов</h3>
                                 <p class="card-text">
                                     Владею основами верстки и программирования на стороне клиента. 
                                     Понимаю принципы работы DOM, умею работать с макетами.
                                 </p>
+                            </section>
+                            <section class="skill-card-section">
                                 <h4 class="card-subtitle">Языки</h4>
                                 <p class="card-text">HTML5, CSS3, JavaScript (Basic)</p>
                                 <h4 class="card-subtitle">Инструменты</h4>
@@ -78,26 +82,34 @@
                                     <li>Figma</li>
                                 </ul>
                             </section>
+                        </div >
+                        <div class="skill-card">
                             <section class="skill-card-section">
-                                <img src="./icons/Design.svg" alt="Дизайн">
+                                <img src="./assests/icons/Design.svg" alt="Дизайн">
                                 <h3 class="card-title">Разработка сайтов</h3>
-                                <pclass="card-text">
+                                <p class="card-text">
                                     Понимаю основы композиции и типографики. 
                                     Могу сверстать сайт точно по макету, 
                                     соблюдая отступы и размеры.
                                 </p>
+                            </section>
+                            <section class="skill-card-section">
                                 <h4 class="card-subtitle">Инструменты</h4>
                                 <ul class="card-list">
                                     <li>Figma</li>
                                     <li>Adobe Photoshop (Basic)</li>
                                 </ul>
                             </section>
-                            <section class="skill-card-section">
-                                <img src="./icons/SoftSkills.svg" alt="Софт скиллы">
+                        </div>
+                        <div class="skill-card">
+                            <section class="skill-card-section"> 
+                                <img src="./assests/icons/SoftSkills.svg" alt="Софт скиллы">
                                 <h3 class="card-title">Soft skills</h3>
                                 <p class="card-text">
                                     Умею работать в команде, коммуницировать с коллегами и находить решения в спорных ситуациях.
                                 </p>
+                            </section>
+                            <section class="skill-card-section">
                                 <h4 class="card-subtitle">Навыки</h4>
                                 <ul class="card-list">
                                     <li>Тайм-менеджмент</li>
@@ -110,96 +122,123 @@
                     </div>
                 </section>
 
-                <section class="projects">
-                    <h2 id="projects">Проекты</h2>
+                <section class="projects container">
+                    <h2 id="projects" class="projects-title">Проекты</h2>
                     <div class="project-list">
                         <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сай</p>
+                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
                         </div>
                         <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сай</p>
+                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
                         </div>
                         <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сай</p>
+                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
                         </div>
                         <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сай</p>
+                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
                         </div>
                         <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сай</p>
+                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
                         </div>
                         <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сай</p>
+                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
                         </div>
                     </div>
                     <div class="project-btn">
-                        <button>Посмотреть на Github</button>
+                        <a href="https://github.com/Seazkicks?tab=repositories">Посмотреть на Github</a>
                     </div>
                 </section>
 
-                <section class="order">
-                    <div>
-                        <h2 class="order-title" id="form">Хотите заказать сайт?</h2>
+                <section class="order container" id="form">
+                    <div class="order-desc container">
+                        <h2 class="order-title" >Хотите заказать сайт?</h2>
                         <p class="order-text">
                             Напишите мне, чтобы обсудить детали. 
                             Я открыт для предложений о стажировке, 
                             Junior-позициях или выполнении несложных проектов на фрилансе.
                         </p>
                     </div>
-                    <div>
-                        <img src="./images/form.png" alt="Форма">
+                    <div class="pos-order-form">
+                        <figure>
+                            <img src="./assests/images/form.png" alt="Форма" width="500" height="500">
+                        </figure>
                         <form action="" class="order-form">
-                            <div>
-                                <div>
-                                    <label for="">Имя</label>
-                                    <input type="text" placeholder="...">
-                                </div>
-                                <div>
-                                    <label for="">E-mail</label>
-                                    <input type="text" placeholder="...">
-                                </div>
-                            </div>
-                            <div>
-                                <label for="">Расскажите про свою задачу</label>
-                                <textarea name="" id=""></textarea>
-                            </div>
-                            <button>Отправить</button>
+                            <fieldset class="form-sender-data">
+                                <label for="" class="form-field">
+                                    <span class="form-label">Имя</span>
+                                    <input type="text" placeholder="..." class="form-input">
+                                </label>
+                                <label for="" class="form-field">
+                                    <span class="form-label">E-mail</span>
+                                    <input type="text" placeholder="..." class="form-input">
+                                </label>
+                            </fieldset>
+                            <fieldset class="form-text-body">
+                                <label class="form-field" for="body">
+                                    <span class="form-label color-black">Расскажите про свою задачу</span>
+                                    <textarea class="form-input color-black" placeholder="..." name="body"></textarea>
+                                </label>
+                            </fieldset>
+                            <fieldset class="form-submit">
+                                <button class="form-button color-orange" type="submit">
+                                    <span class="form-button-text">Отправить</span>
+                                </button>
+                            </fieldset>
                         </form>
                     </div>
                 </section>
 
-                <section class="reviews">
+                <!-- <section class="reviews">
                     <h2 class="reviews-title">Отзывы</h2>
-                </section>
+                </section> -->
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <div>
-                <div>
-                    <h2>Договоримся о сотрудничестве</h2>
+        <div class="footer-end container">
+            <aside class="letstalk">
+                <div class="block-info">
+                    <h2 class="block-info-title">Договоримся о сотрудничестве</h2>
+                    <p class="block-info-text">У вас есть идея проекта или предложение о работе? Напишите мне, я открыт к диалогу и предложениям.</p>
+                    <div class="letstalk-btn-container">
+                        <a href="#form" class="letstalk-btn">
+                            <span class="letstalk-btn-text">
+                                Связаться c разработчиком
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <p>У вас есть идея проекта или предложение о работе? Напишите мне, я открыт к диалогу и предложениям.</p>
-                </div>
-                <div>
-                    <button>Связаться с разработчиком</button>
-                </div>
+            </aside>
+
+            <div class="contact-info">
+                <a href="" class="contact-block-img">
+                    <img class="contact-block-icon" src="./assests/icons/TG.svg" alt="">
+                </a>
+                <a href="" class="contact-block-img">
+                    <img class="contact-block-icon" src="./assests/icons/Habr.svg" alt="">
+                </a>
+                <a href="" class="contact-block-img">
+                    <img class="contact-block-icon" src="./assests/icons/Email.svg" alt="">
+                </a>
             </div>
 
-            <div>
-                <div>
-                    <img src="./icons/TG.svg" alt="">
-                </div>
-                <div>
-                    <img src="./icons/Habr.svg" alt="">
-                </div>
-                <div>
-                    <img src="./icons/Email.svg" alt="">
-                </div>
-            </div>
+            <p class="footer-links">
+                Изображения и иконки:
+                <a href="https://ru.freepik.com/free-vector/software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">Изображение-1 от Storyset на Freepik.</a> 
+
+                <a href="https://ru.freepik.com/free-vector/code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">Изображение-2 от Storyset на Freepik.</a> 
+
+                <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">Иконка "Html" от Frey Wazza на Flaticon.</a> 
+
+                <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">Иконка «Телеграм» от Freepik на Flaticon.</a>
+
+                <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.</a> 
+
+                <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">Иконка «Дизайн сайта» от Freepik на Flaticon.</a> 
+
+                <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">Иконка «Эл.адрес» от Those Icons на Flaticon.</a>
+            </p>
         </div>
     </footer>
 </body>

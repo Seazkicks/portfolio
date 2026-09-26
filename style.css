@@ -1,0 +1,551 @@
+/* fonts */
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../assets/fonts/TildaSans/TildaSans-Light.ttf");
+}
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/TildaSans/TildaSans-Regular.ttf");
+}
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../assets/fonts/TildaSans/TildaSans-Medium.ttf");
+}
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 600;
+    src: url("../assets/fonts/TildaSans/TildaSans-Semibold.ttf");
+}
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/fonts/TildaSans/TildaSans-Bold.ttf");
+}
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../assets/fonts/TildaSans/TildaSans-ExtraBold.ttf");
+}
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../assets/fonts/TildaSans/TildaSans-Black.ttf");
+}
+
+/* main settings */
+.page {
+    scroll-behavior: smooth;
+}
+
+.page-body {
+    margin: 0;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea {
+    outline: none;
+    appearance: none;
+}
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.navbar-list {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 45px 0 45px 25%;
+}
+
+.navbar-item {
+
+}
+
+.navbar-link {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.contact-btn-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-btn {
+    border: 2px solid #FF9235;
+    padding: 9px 22px;
+    border-radius: 15px;
+}
+
+.contact-btn-text {
+    color: #FF9235;
+    font-size: 25px;
+}
+
+.contact-btn:hover {
+    
+    background-color: #FF9235;
+}
+.contact-btn-text:hover {
+    color: #fff;
+}
+
+
+/* main */
+
+.main {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+.fio {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+}
+
+.main-desc {
+    width: 70%;
+}
+
+.main-text {
+    font-size: 36px;
+    text-align: center;
+}
+
+.main-img {
+    min-width: 80vh;
+}
+
+/* about */
+
+.about {
+
+}
+
+.about-container {
+    padding: 35px 0 75px 0;
+    background-color: #5DD9C8;
+}
+
+.about-title {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 70%;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.about-photo {
+    margin-top: -10vh;
+}
+
+.about-photo img{
+    border: 5px solid #5DD9C8;
+    border-radius: 12px;
+}
+
+
+/* skills */
+
+.skills {
+    margin-top: 25px;
+}
+
+.skills-title {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+.skills-table {
+    width: 80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid #5DD9C8;
+    border-radius: 15px;
+}
+
+.skill-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.skill-card:not(:last-child) {
+    border-right: 2px solid #5DD9C8;
+}
+
+.skill-card-section {
+
+}
+
+.skill-card-section {
+
+}
+
+.card-title {
+    font-size: 36px;
+}
+
+.card-text {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.card-subtitle {
+    color:#FF9235;
+    font-size: 30px;
+}
+
+.card-list {
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+}
+
+
+/* projects */
+
+.projects {
+    margin-top: 25px;
+}
+
+.projects-title {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    border: 2px solid #8063A6;
+    border-radius: 15px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item p {
+    font-size: 34px
+}
+
+.project-btn {
+    margin-top: 50px;
+}
+
+.project-btn a {
+    background-color: #fff;
+    border: 2px solid #FF9235;
+    color: #FF9235;
+    border-radius: 12px;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.project-btn a:hover {
+    background-color: #FF9235;
+    color: #fff;
+}
+
+/* order */
+
+.order {
+    margin-top: 150px;
+}
+
+.order-desc {
+    background-color: #5DD9C8;
+    width: 100%;
+}
+
+.order-title {
+    font-size: 54px;
+}
+
+.order-text {
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pos-order-form {
+     width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-form {
+    margin: 0 5vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-sender-data {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-field {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-label {
+    margin: 0 0 10px 4px;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+/* Задаем стили для полей формы input и textarea. */
+.form-input {
+    margin: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    border: 1px solid #FF9235;
+    border-radius: 12px;
+}
+
+.form-sender-data .form-input {
+    min-width: 150px;
+    max-width: 20vw;
+    padding: 0 6px;
+}
+
+.form-sender-data .form-field:first-child {
+    padding-right: 10px;
+}
+
+.form-text-body {
+    margin: 48px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.form-text-body .form-input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+}
+.form-submit {
+    margin: 48px 0 0 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.form-button {
+    padding: 15px 40px;
+    margin: 0;
+    background-color: #ffffff;
+    border: 2px solid #ff9235;
+    border-radius: 15px;
+}
+
+.form-button-text {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #ff9235;
+}
+
+.form-button:hover {
+    background-color: #ff9235;
+    
+}
+
+.form-button-text:hover {
+    color: #ffffff;
+}
+
+/* footer */
+
+.footer-end {
+    margin-top: 50px;
+    background-color: #5DD9C8;
+    width: 100%;
+}
+
+.letstalk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block-info {
+    margin-top: -100px;
+    background-color: #8063A6;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    padding: 0 3vw;
+    gap: 3vw;
+}
+
+.block-info-title {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    width: 30%;
+}
+
+.block-info-text {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    width: 40%;
+}
+
+.letstalk-btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.letstalk-btn {
+    margin: 0;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.letstalk-btn-text {
+    color: #fff;
+    font-size: 19px;
+}
+
+.contact-info {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-block-img {
+    height: 48px;
+    width: 48px;
+    box-sizing: border-box;
+    margin: 0 15px;
+    padding: 4px;
+    border: 2px solid #141c3a;
+    border-radius: 48px;
+}
+
+.contact-block-img:hover {
+    background-color: #8063a6;
+    border: 2px solid #8063a6;
+}
+
+.contact-block-icon {
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    margin: 30px 0 45px 0;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
