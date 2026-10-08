@@ -1,0 +1,49 @@
+/* about */
+
+.about {
+
+}
+
+.about-container {
+    padding: 35px 0 75px 0;
+    background-color: var(--color-teal);
+}
+
+.about-title {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 70%;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.about-photo {
+    margin-top: -10vh;
+}
+
+.about-photo img{
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--color-teal);
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 625px) {
+    .about-photo img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-photo img {
+        width: 350px;
+    }
+}

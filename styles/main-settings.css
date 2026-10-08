@@ -1,0 +1,53 @@
+
+/* main settings */
+.page {
+    scroll-behavior: smooth;
+}
+
+.page-body {
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+    font-family: "TildaSans", sans-serif;
+    color: var(--color-text);
+}
+
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea {
+    outline: none;
+    appearance: none;
+}
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .page-body {
+        margin: 0;
+        margin-top: 100px;
+    }
+}

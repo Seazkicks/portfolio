@@ -1,0 +1,96 @@
+:root {
+    --text-body: clamp(0.875rem, 0.82rem + 0.25vw, 1rem);
+    --text-medium: clamp(1rem, 0.88rem + 0.5vw, 1.25rem);
+    --text-large: clamp(1.125rem, 0.85rem + 1.2vw, 2.25rem);
+    --text-card: clamp(1rem, 0.75rem + 1.1vw, 1.875rem);
+    --text-heading: clamp(1.5rem, 6vw, 3.375rem);
+}
+
+.page-body {
+    font-size: var(--text-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+label,
+button,
+input,
+textarea,
+span {
+    line-height: 1.35;
+}
+
+.fio {
+    max-width: 100%;
+    font-size: var(--text-heading);
+    line-height: 1.1;
+}
+
+.about-title,
+.skills-title,
+.projects-title,
+.order-title {
+    font-size: var(--text-heading);
+    line-height: 1.1;
+}
+
+.main-text,
+.about-text {
+    font-size: var(--text-large);
+}
+
+.navbar-link,
+.contact-btn-text {
+    font-size: var(--text-medium);
+}
+
+.card-title {
+    font-size: var(--text-large);
+}
+
+.item p {
+    font-size: var(--text-medium);
+}
+
+
+.card-text,
+.card-subtitle,
+.card-list,
+.order-text,
+.project-btn a,
+.form-input,
+.form-button-text,
+.block-info-title {
+    font-size: var(--text-card);
+}
+
+.form-label,
+.block-info-text,
+.letstalk-btn-text,
+.footer-links {
+    font-size: var(--text-body);
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-mobile {
+        padding-right: clamp(16px, 5vw, 40px);
+        padding-left: clamp(16px, 5vw, 40px);
+    }
+
+    .navbar-mobile > .contact-btn {
+        display: block;
+        box-sizing: border-box;
+        min-width: 0;
+        max-width: calc(100% - 65px);
+        padding: 8px clamp(10px, 3vw, 22px);
+    }
+
+    .navbar-mobile .contact-btn-text {
+        display: block;
+    }
+}

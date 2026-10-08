@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/main-settings.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/order.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/responsive-text.css">
+    <link rel="stylesheet" href="./styles/animation.css">
 </head>
-<body class="page-body">
+<body class="page-body" tabindex="0">
     <header>
-        
             <div class="header">
-                <nav class="navbar">
+                <nav class="navbar pos-top enter-from-top">
                     <ul class="navbar-list">
                         <li class="navbar-item"><a href="#main" class="navbar-link">Главная</a></li>
                         <li class="navbar-item"><a href="#about" class="navbar-link">Обо мне</a></li>
@@ -18,52 +30,70 @@
                         <li class="navbar-item"><a href="#projects" class="navbar-link">Проекты</a></li>
                     </ul>
                     <div class="contact-btn-container">
-                        <a href="#form" class="contact-btn">
-                            <span class="contact-btn-text">
+                        <a href="#form">
+                            <span class="contact-btn contact-btn-text animated">
                                 Связаться со мной
                             </span>
                         </a>
                     </div>
                 </nav>
+
+                <nav class="navbar-mobile pos-top enter-from-top">
+                    <details>
+                        <summary></summary>
+
+                        <ul class="navbar-list">
+                            <li class="navbar-item"><a href="#main" class="navbar-link">Главная</a></li>
+                            <li class="navbar-item"><a href="#about" class="navbar-link">Обо мне</a></li>
+                            <li class="navbar-item"><a href="#skills" class="navbar-link">Навыки и стэк</a></li>
+                            <li class="navbar-item"><a href="#projects" class="navbar-link">Проекты</a></li>
+                        </ul>
+                    </details>
+
+                    <a href="#form" class="contact-btn cnt-btn-mob ">
+                        <span class="contact-btn-text">
+                            Связаться со мной
+                        </span>
+                    </a>
+                </nav>
             </div>
-        
     </header>
 
     <main>
         <div class="page-content">
-            <div class="">
-                <section class="main container">
-                    <h1 class="fio" id="main">ДМИТРИЙ РАЗУМКОВ</h1>
-                    <p class="main-desc main-text">
+            <div class="wrapper">
+                <section id="main" class="main container">
+                    <h1 class="fio fade-in-1">ДМИТРИЙ РАЗУМКОВ</h1>
+                    <p class="main-desc main-text fade-in-2">
                         Начинающий Frontend-разработчик. 
                         Изучаю создание адаптивных сайтов и интерактивных интерфейсов. 
                         Ищу возможности для применения полученных знаний на практике.
                     </p>
-                    <img class="main-img" src="./assests/images/main.png" alt="Главное изображение">
+                    <img class="main-img fade-in-3" src="./assests/images/main.png" alt="Главное изображение">
                 </section>
 
                 <section id="about" class="about container">
-                    <div class="about-container container">
-                        <h2 class="about-title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h2>
+                    <div class="about-container container fade-in-1">
+                        <h2 class="about-title fade-in-2">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h2>
                         <p class="about-text">
                             Меня зовут Дмитрий. Я активно учусь на Frontend-разработчика и горю желанием создавать удобные и красивые сайты. 
                             В процессе обучения я освоил верстку, работу с современными фреймворками и инструментами разработки.
                         </p>
-                        <p class="about-text">
+                        <p class="about-text fade-in-3">
                             Мне нравится превращать дизайн-макеты в живой код, который работает на любых устройствах. 
                             Я внимателен к деталям, быстро учусь новому и готов вникать в задачи любой сложности. 
                             Моя цель — стать частью команды профессионалов и расти как специалист.
                         </p>
                     </div>
-                    <figure class="about-photo">
+                    <figure class="about-photo fade-in-4">
                         <img src="./assests/images/me.jpg" alt="Да, да. Это я" width="600" height="800">
                     </figure>
                 </section>
 
-                <section class="skills container">
-                    <h2 id="skills" class="skills-title">Навыки и стэк технологий</h2>
-                    <div class="skills-table">
-                        <div class="skill-card">
+                <section id="skills" class="skills container">
+                    <h2  class="skills-title fade-in-1">Навыки и стэк технологий</h2>
+                    <div class="skills-table fade-in-2">
+                        <div class="skill-card fade-in-2">
                             <section class="skill-card-section">
                                 <img src="./assests/icons/Development.svg" alt="Разработка">
                                 <h3 class="card-title">Разработка сайтов</h3>
@@ -83,8 +113,8 @@
                                 </ul>
                             </section>
                         </div >
-                        <div class="skill-card">
-                            <section class="skill-card-section">
+                        <div class="skill-card fade-in-3">
+                            <section class="skill-card-section ">
                                 <img src="./assests/icons/Design.svg" alt="Дизайн">
                                 <h3 class="card-title">Разработка сайтов</h3>
                                 <p class="card-text">
@@ -101,7 +131,7 @@
                                 </ul>
                             </section>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card fade-in-4">
                             <section class="skill-card-section"> 
                                 <img src="./assests/icons/SoftSkills.svg" alt="Софт скиллы">
                                 <h3 class="card-title">Soft skills</h3>
@@ -122,37 +152,55 @@
                     </div>
                 </section>
 
-                <section class="projects container">
-                    <h2 id="projects" class="projects-title">Проекты</h2>
-                    <div class="project-list">
-                        <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
-                        </div>
-                        <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
-                        </div>
-                        <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
-                        </div>
-                        <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
-                        </div>
-                        <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
-                        </div>
-                        <div class="item">
-                            <p>Скриншот проекта. Блок - ссылка на сайт</p>
-                        </div>
+                <section id="projects" class="projects container">
+                    <h2 class="projects-title fade-in-1">Проекты</h2>
+                    <div class="project-list fade-in-2">
+                        <figure class="item">
+                            <figcaption class="item-caption">
+                                <p class="item-caption-text">Скриншот проекта. Блок - ссылка на сайт</p>
+                                <a href="" class="letstalk-btn animated">Ссылка на код</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="item">
+                            <figcaption class="item-caption animated">
+                                <p class="item-caption-text">Скриншот проекта. Блок - ссылка на сайт</p>
+                                <a href="" class="letstalk-btn animated">Ссылка на код</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="item">
+                            <figcaption class="item-caption">
+                                <p class="item-caption-text">Скриншот проекта. Блок - ссылка на сайт</p>
+                                <a href="" class="letstalk-btn">Ссылка на код</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="item">
+                            <figcaption class="item-caption">
+                                <p class="item-caption-text">Скриншот проекта. Блок - ссылка на сайт</p>
+                                <a href="" class="letstalk-btn">Ссылка на код</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="item">
+                            <figcaption class="item-caption">
+                                <p class="item-caption-text">Скриншот проекта. Блок - ссылка на сайт</p>
+                                <a href="" class="letstalk-btn">Ссылка на код</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="item">
+                            <figcaption class="item-caption">
+                                <p class="item-caption-text">Скриншот проекта. Блок - ссылка на сайт</p>
+                                <a href="" class="letstalk-btn">Ссылка на код</a>
+                            </figcaption>
+                        </figure>
                     </div>
                     <div class="project-btn">
-                        <a href="https://github.com/Seazkicks?tab=repositories">Посмотреть на Github</a>
+                        <a class="animated" href="https://github.com/Seazkicks?tab=repositories">Посмотреть на Github</a>
                     </div>
                 </section>
 
                 <section class="order container" id="form">
-                    <div class="order-desc container">
-                        <h2 class="order-title" >Хотите заказать сайт?</h2>
-                        <p class="order-text">
+                    <div class="order-desc container fade-in-1">
+                        <h2 class="order-title fade-in-2" >Хотите заказать сайт?</h2>
+                        <p class="order-text fade-in-2">
                             Напишите мне, чтобы обсудить детали. 
                             Я открыт для предложений о стажировке, 
                             Junior-позициях или выполнении несложных проектов на фрилансе.
@@ -160,9 +208,9 @@
                     </div>
                     <div class="pos-order-form">
                         <figure>
-                            <img src="./assests/images/form.png" alt="Форма" width="500" height="500">
+                            <img class="fade-in-3" src="./assests/images/form.png" alt="Форма" width="500" height="500">
                         </figure>
-                        <form action="" class="order-form">
+                        <form action="" class="order-form fade-in-4">
                             <fieldset class="form-sender-data">
                                 <label for="" class="form-field">
                                     <span class="form-label">Имя</span>
@@ -181,7 +229,7 @@
                             </fieldset>
                             <fieldset class="form-submit">
                                 <button class="form-button color-orange" type="submit">
-                                    <span class="form-button-text">Отправить</span>
+                                    <span class="form-button-text animated">Отправить</span>
                                 </button>
                             </fieldset>
                         </form>
@@ -197,12 +245,12 @@
 
     <footer>
         <div class="footer-end container">
-            <aside class="letstalk">
-                <div class="block-info">
+            <aside class="letstalk fade-in-1">
+                <div class="block-info fade-in-2">
                     <h2 class="block-info-title">Договоримся о сотрудничестве</h2>
                     <p class="block-info-text">У вас есть идея проекта или предложение о работе? Напишите мне, я открыт к диалогу и предложениям.</p>
                     <div class="letstalk-btn-container">
-                        <a href="#form" class="letstalk-btn">
+                        <a href="#form" class="letstalk-btn animated">
                             <span class="letstalk-btn-text">
                                 Связаться c разработчиком
                             </span>
@@ -211,7 +259,7 @@
                 </div>
             </aside>
 
-            <div class="contact-info">
+            <div class="contact-info fade-in-1">
                 <a href="" class="contact-block-img">
                     <img class="contact-block-icon" src="./assests/icons/TG.svg" alt="">
                 </a>

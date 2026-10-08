@@ -1,0 +1,35 @@
+/* main */
+
+.main {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+.fio {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+}
+
+.main-desc {
+    width: 70%;
+}
+
+.main-text {
+    font-size: 36px;
+    text-align: center;
+}
+
+.main-img {
+    display: block;
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 810px) {
+    .main-img {
+        
+    }
+}

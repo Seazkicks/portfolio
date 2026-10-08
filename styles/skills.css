@@ -1,0 +1,59 @@
+/* skills */
+
+.skills {
+    margin-top: 25px;
+}
+
+.skills-title {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+.skills-table {
+    width: 80%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid var(--color-teal);
+    border-radius: 15px;
+}
+
+.skill-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.skill-card:not(:last-child) {
+    border-right: 2px solid var(--color-teal);
+}
+
+.card-title {
+    font-size: 36px;
+}
+
+.card-text {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.card-subtitle {
+    color: var(--color-orange);
+    font-size: 30px;
+}
+
+.card-list {
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+}
+
+@media (max-width: 1150px) {
+    .skills-table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skill-card:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid var(--color-teal);
+    }
+}

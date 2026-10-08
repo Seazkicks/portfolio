@@ -1,0 +1,88 @@
+/* projects */
+
+.projects {
+    margin-top: 25px;
+}
+
+.projects-title {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+.project-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 400px));
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    background-image: url(../assests/icons/code-project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid var(--color-purple);
+    border-radius: 15px;
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item:hover,
+.item:focus-within {
+    z-index: 8;
+    transform: scale(1.25);
+    background: var(--color-purple);
+    box-shadow: var(--color-navbar-shadow);
+}
+
+.item p,
+.item a {
+    color: var(--color-white);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.item:hover p,
+.item:hover a,
+.item:focus-within p,
+.item:focus-within a {
+    opacity: 1;
+}
+
+.project-btn {
+    margin-top: 50px;
+}
+
+.project-btn a {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-orange);
+    color: var(--color-orange);
+    border-radius: 12px;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.project-btn a:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+@media (max-width: 1265px) {
+    .project-list {
+        grid-template-columns: repeat(2, minmax(0, 400px));
+    }
+}
+
+@media (max-width: 840px) {
+    .project-list {
+        grid-template-columns: minmax(0, 275px);
+    }
+}
